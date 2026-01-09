@@ -1,0 +1,130 @@
+/* ====================================
+   FONTS.CSS - Font Imports
+   ==================================== */
+
+/* Google Fonts - Roboto (Primary) */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* Google Fonts - Montserrat (Secondary/Headings) */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+/* Material Icons (if needed) */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* 
+  Alternative Vietnamese-optimized fonts:
+  - Nunito Sans
+  - Inter
+  - Be Vietnam Pro
+*/
+
+/* Example: Vietnamese font */
+/* @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap'); */
+🌐 3. FILE src/styles/global.css (Optional)
+Mục đích: CSS resets và global overrides
+/* ====================================
+   GLOBAL.CSS - Global Overrides
+   ==================================== */
+
+/* ==================
+   CSS RESET
+   ================== */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+/* Remove default margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* ==================
+   SCROLLBAR CUSTOM
+   ================== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ==================
+   SELECTION COLOR
+   ================== */
+::selection {
+  background-color: var(--color-primary-light);
+  color: white;
+}
+
+::-moz-selection {
+  background-color: var(--color-primary-light);
+  color: white;
+}
+
+/* ==================
+   FOCUS VISIBLE
+   ================== */
+*:focus-visible {
+  outline: 2px solid var(--color-primary-main);
+  outline-offset: 2px;
+}
+
+/* ==================
+   SMOOTH SCROLL
+   ================== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==================
+   IMAGES RESPONSIVE
+   ================== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==================
+   BUTTON RESET
+   ================== */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
